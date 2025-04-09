@@ -20,7 +20,7 @@ try {
 
     // Check connection
     if ($conn_check->connect_error) {
-        throw new Exception("Database connection failed: " . $conn_check->connect_error);
+        throw new Exception("Database connection has failed: " . $conn_check->connect_error);
     }
 
     if (basename($_SERVER['PHP_SELF']) == 'db_connect.php') {
